@@ -1,0 +1,2205 @@
+.hero-parks {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero-parks .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+   
+}
+
+
+.hero-parks::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.90) 40%,
+        rgba(0,0,0,0.65) 60%,
+        transparent 100%
+    );
+    
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content-parks {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    padding: 90px 5%;
+    line-height: 1.4;
+    color: white;
+    line-height: 1.6;
+    width: 60%;
+   
+    
+}
+
+.hero-content-parks h3{
+    font-size: 35px;
+   
+
+
+}
+.hero-content-parks h1{
+    font-size: 67px;
+    color: gold;
+
+
+}
+.hero-content-parks h2{
+    font-size:60px;
+    color: gold;
+    
+
+
+}
+.hero-content-parks p{
+    font-size: 25px;
+    word-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.park-btn {
+    display: inline-block;
+    width:60%;
+    margin-top: 28px;
+    padding: 14px 25px;
+    background: gold;
+    color: #071b13;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+
+.park-btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+
+
+
+
+/* MAIN LAYOUT */
+.main-layout {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 2.1fr) minmax(4, 1fr);
+    gap: 15px;
+    align-items: start;
+    padding-top: 15px;
+    padding: 0 40px;
+}
+
+
+/* SECTION HEADING */
+.parks-section,
+.safari-section {
+    background: #fffef9;
+    border: 1px solid #e3dfd1;
+    border-radius: 12px;
+    padding: 14px;
+    margin-bottom: 12px;
+}
+
+.Section-heading {
+  text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+}
+
+.Section-heading h2,
+.attractions h2 {
+    font-size: 40px;
+    color: #102e17;
+}
+
+.Section-heading p{
+    font-size: 20px;
+}
+
+
+/* PARK CARDS */
+.parks-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.park-card {
+    background: #fff;
+    border: 2px solid #e1dfd5;
+    border-radius: 9px;
+    overflow: hidden;
+    transition: 0.3s;
+    min-width: 0;
+    box-shadow: 0 5px 10px rgba(21, 172, 5, 0.452);
+}
+
+.park-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 18px rgba(237, 41, 2, 0.571);
+}
+
+.park-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    
+}
+
+
+.park-info {
+    padding: 20px;
+}
+
+.park-info h3 {
+    font-size: 20px;
+    line-height: 1.3;
+    min-height: 34px;
+    color: #15441c;
+    margin-bottom: 5px;
+}
+
+.park-info p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4e574d;
+}
+
+.park-info a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #416d18;
+    color: white;
+    padding: 8px 4px;
+    margin-top: 9px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.park-info a:hover {
+    background: #183e19;
+}
+
+.view-all {
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.view-all a {
+    display: inline-block;
+    text-decoration: none;
+    color: #142b16;
+    border: 1px solid #456b16;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.view-all a:hover {
+    background: #456b16;
+    color: white;
+}
+
+
+/* BOOKING PANEL */
+.booking-panel {
+    background: #fffef9;
+    border: 2px solid #e0ddcf;
+    border-radius: 12px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    top: 10px;
+    width: 100%;
+    margin: 30px auto;
+    max-width: 850px;
+    justify-content: center;
+}
+
+.booking-heading {
+    background:rgb(4, 48, 7);
+    color: white;
+    padding: 15px 8px;
+    text-align: center;
+    
+}
+
+.booking-heading h2 {
+    font-size: 30px;
+}
+
+.booking-heading p {
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+.booking-panel form {
+    padding: 20px;
+}
+
+.booking-panel label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.booking-panel input,
+.booking-panel select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dedbcf;
+    border-radius: 6px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.booking-panel input:focus,
+.booking-panel select:focus {
+    border-color: #537b20;
+    box-shadow: 0 0 4px rgba(83, 123, 32, 0.25);
+}
+
+
+.safari-options {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+    margin-top: 9px;
+}
+.safari-options div {
+    border: 1px solid #dedbcf;
+    border-radius: 6px;
+    padding: 10px 3px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.7;
+}
+
+.form-divider {
+    height: 1px;
+    background: #dedbcf;
+    margin: 18px 0;
+}
+
+.booking-panel form > h3 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.summary {
+    background: #f4f1e5;
+    border: 1px solid #e2dece;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.summary p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 9px 0;
+}
+
+.summary h3:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary h3 b {
+    color: #466b18;
+    font-size: 21px;
+}
+
+.confirm-btn {
+    width: 100%;
+    border: none;
+    background: #3f7017;
+    color: white;
+    padding: 13px;
+    border-radius: 6px;
+    margin-top: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    background: #173e19;
+}
+.confirm-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.secure-note {
+    background: #f1eedf;
+    border: 1px solid #dfdac7;
+    border-radius: 7px;
+    padding: 12px 5px;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+ /*Boking-succssful form*/
+
+    
+    
+.success-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+
+    background:
+    linear-gradient(rgba(0,30,15,.85), rgba(0,20,10,.9)),
+    url("images/forest.jpg") center/cover no-repeat;
+}
+
+.success-card {
+    width: 100%;
+    max-width: 650px;
+    padding: 45px 30px;
+    text-align: center;
+    background: #f5f5eb;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.35);
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #1d713e;
+    color: white;
+    font-size: 48px;
+    line-height: 75px;
+}
+
+.success-card h1 {
+    color: #17532f;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.success-card h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.success-card p {
+    color: #555;
+    line-height: 1.7;
+}
+
+.success-message {
+    background: #e4efdf;
+    padding: 18px;
+    border-radius: 10px;
+    margin: 25px 0;
+}
+
+.success-message h3 {
+    color: #17532f;
+}
+
+.home-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #17452c;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.home-btn:hover {
+    background: #287c49;
+    transform: translateY(-3px);
+}
+
+
+
+    
+
+
+/* SAFARI EXPERIENCES */
+
+.safari-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.safari-card {
+    border: 2px solid #e4e0d5;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 10px;
+    background: white;
+    box-shadow: 0 3px 6px rgba(255, 217, 0, 0.875);
+}
+
+.safari-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.safari-card h3 {
+    font-size: 20px;
+    padding: 7px 9px 4px;
+}
+
+.safari-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 9px;
+    min-height: 60px;
+}
+
+.safari-card b {
+    display: block;
+    padding: 8px 9px 0;
+    color: #456b16;
+    font-size: 19px;
+}
+
+
+/* INFORMATION */
+
+.information {
+    width: 96%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 30px 0;
+}
+
+.info-card {
+    background: #eeecdf;
+    border: 1px solid #dedbcf;
+    border-radius: 9px;
+    padding: 20px;
+    min-width: 0;
+   box-shadow: 0 3px 6px rgba(47, 12, 172, 0.875);
+}
+
+.info-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #19351b;
+}
+
+.info-card ul {
+    padding-left: 20px;
+}
+
+.info-card li {
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.fact-card img {
+    width: 100%;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.fact-card p {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 7px;
+}
+
+
+/* TOP ATTRACTIONS */
+
+.attractions {
+    width: 96%;
+    margin: 15px auto;
+    background: #ebede3;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow:0 3px 6px rgba(162, 163, 161, 0.875) ;
+}
+
+.attractions h2 {
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.attraction-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    
+}
+
+.attraction-grid div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.attraction-grid img {
+    width: 100%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    transition: 0.4s;
+}
+
+.attraction-grid div:hover img {
+    transform: scale(1.08);
+}
+
+.attraction-grid h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 5px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+.footer{
+    width: 100%;
+    margin: 20px 0;
+}
+
+
+
+/*GALERY-MENU BAR*/
+
+
+
+/* HERO SECTION */
+
+.gallery-hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+   
+}
+.gallery-video{
+    transform: scaleX(-1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+
+}
+
+
+.gallery-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.65) 50%,
+        transparent 100%
+    );
+
+    z-index: 1 ;
+    pointer-events: none;
+}
+
+.gallery-hero-content {
+    max-width: 750px;
+    color: white;
+    z-index: 2;
+    position: relative;
+    padding: 40px 5%;
+   
+}
+
+.gallery-hero-content span ,
+.conservation-content span{
+    color:gold;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.gallery-heading span
+ {
+    color: #a6ce39;
+    letter-spacing: 3px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.gallery-hero h1 {
+   font-size: 80px;
+    margin: 15px 0;
+}
+
+.gallery-hero h1 b {
+    color: gold;
+}
+
+.gallery-hero p {
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+
+.gallery-btn,
+.gallery-conservation a {
+    display: inline-block;
+    padding: 13px 23px;
+    margin: 5px;
+    background: gold;
+    color: #102317;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s;
+    width: 70%;
+}
+
+.gallery-btn:hover,
+.gallery-conservation a:hover {
+    background: white;
+    transform: translateY(-4px);
+    color: #000;
+}
+
+.outline-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #a6ce39;
+}
+
+
+
+.gallery-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.gallery-heading h2 {
+    color: #153a1e;
+    font-size:50px;
+    margin: 12px 0;
+}
+
+.gallery-heading p {
+    color: #393939;
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+
+/* CATEGORY SECTION */
+
+.gallery-categories,
+.photo-section,
+.video-section,
+.habitat-gallery {
+    padding: 80px 6%;
+    background: #fcfefd;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.category-card {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px #83570c;
+}
+.category-video{
+    object-fit: cover;
+    width: 100%;
+    height:31vh;
+    display: block;
+    z-index: 0;
+    position:absolute;
+
+}
+
+.category-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+
+.category-card:hover img {
+    transform: scale(1.1);
+}
+
+.category-card h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12px 15px;
+    color: white;
+    background: linear-gradient(transparent, #000);
+}
+
+
+/* PHOTO GALLERY */
+
+.photo-section {
+    background: white;
+}
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.photo-card {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+     box-shadow: 0 6px 10px #83570c;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.photo-card:hover img {
+    transform: scale(1.1);
+}
+
+.photo-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 35px 20px 20px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,.9));
+}
+
+.photo-info h3 {
+    color: #a6ce39;
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+.photo-info p {
+    font-size: 18px;
+}
+
+
+/* VIDEO GALLERY */
+
+.video-section {
+    background: white;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.video-card {
+    background: #18382a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 5px 9px #15441c;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+}
+
+.video-card video {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    background: black;
+}
+
+.video-info {
+    padding: 18px;
+}
+
+.video-info h3 {
+    color: #a6ce39;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.video-info p {
+    color: #c4d0c7;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* HABITAT GALLERY */
+
+.habitat-gallery {
+    background: white;
+}
+
+.habitat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.habitat-card {
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #045a9b;
+}
+
+.habitat-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.habitat-card:hover  {
+    transform: translateY(-3px);
+}
+
+.habitat-card h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(transparent, black);
+}
+
+
+/* CONSERVATION BANNER */
+
+.gallery-conservation {
+    min-height: 380px;
+    padding: 70px 8%;
+    display: flex;
+    align-items: center;
+
+    background:
+    linear-gradient(90deg, rgba(0,0,0,.85), rgba(0,0,0,.2)),
+    url("https://www.penchjunglecamp.com/img/information/banner-9.jpg") center/cover no-repeat;
+}
+
+.conservation-content {
+    max-width: 600px;
+    color: white;
+}
+
+.conservation-content h2 {
+    font-size: clamp(27px, 4vw, 42px);
+    margin: 15px 0;
+}
+
+.conservation-content p {
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/*==========================
+About Us menu bar
+======================*/
+
+
+/* HERO */
+
+.about-hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    
+}
+.about-hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+   
+}
+
+
+.about-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.90) 0%,
+        rgba(0,0,0,0.65) 40%,
+        transparent 100%
+    );
+    
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+.about-hero-content {
+    width: 680px;
+    position: relative;
+    z-index: 2;
+    padding: 40px 5%;
+}
+
+.tag {
+    color: gold;
+    letter-spacing: 4px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.about-hero h1 {
+    font-size: 60px;
+    line-height: 1.15;
+    margin: 22px 0;
+    color:whitesmoke;
+}
+
+.about-hero h1 span{
+    color:gold;
+}
+
+.about-hero p {
+    color: white;
+    font-size: 22px;
+    line-height: 1.9;
+    max-width: 570px;
+}
+
+.about-hero-btn{
+    display: inline-block;
+    width: 100%;
+    margin-top: 28px;
+    padding: 14px 25px;
+    background: gold;
+    color: #071b13;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s;
+}
+.read-btn{
+    display: inline-block;
+    width: 50%;
+    margin-top: 28px;
+    padding: 14px 25px;
+    background: #a4d421;
+    color: #071b13;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s;
+    
+}
+.about-hero-btn:hover,
+.read-btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+    padding: 80px 8%;
+    position: relative;
+}
+
+.Section-Heading {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.Section-Heading h2 {
+   font-size: 50px;
+    margin: 12px 0;
+}
+.Section-Heading h2 span{
+    color: #173e19;
+}
+.Section-Heading > span{
+    font-size: 25px;
+    color: #173e19;
+}
+.Section-Heading p {
+    color: #686c69;
+    font-size: 20px;
+    word-spacing: 4px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #496a48;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-text h3 {
+    font-size: 32px;
+    margin-bottom: 22px;
+    color:#1d713e;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: black;
+    margin-bottom: 15px;
+}
+
+
+/* MISSION SECTION */
+
+.mission-section {
+    padding: 30px 8% 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.mission-card {
+  background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    padding: 38px 28px;
+    border: 1px solid #294a35;
+    border-radius: 9px;
+    text-align: center;
+    transition: .3s;
+}
+
+.mission-card:hover {
+    transform: translateY(-8px);
+    border-color: #a6c96b;
+    box-shadow: 0 12px 30px rgba(0,0,0,.3);
+}
+
+.mission-icon {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    color: #b4d77e;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.mission-card p {
+    color: #c0d0c2;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* TEAM SECTION */
+
+/* =========================
+   MEET OUR TEAM SECTION
+========================= */
+
+.team-section {
+    width: 100%;
+    padding: 40px 3%;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    
+    
+}
+
+/* HEADING */
+
+.team-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.team-heading span {
+    color: #a4cf39;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.team-heading h1 {
+    color: white;
+   font-size: 45px;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.team-heading h1 b {
+    color: #a4cf39;
+}
+
+.heading-line {
+    color: #a4cf39;
+    font-size: 28px;
+    margin: 12px 0;
+}
+
+.team-heading p {
+    color: #e0e9e0;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* TEAM GRID */
+
+.team-wrapper {
+    max-width: 1450px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr 1.54fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+
+/* MEMBER CARDS */
+
+.member-card {
+    background: rgba(3, 27, 16, 0.88);
+    border: 1px solid #637d23;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.4s ease;
+    min-width: 0;
+    max-width: ;
+}
+
+.member-card:hover {
+    transform: translateY(-10px);
+    border-color: #b5e34c;
+    box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(164, 207, 57, 0.2);
+}
+
+
+/* MEMBER IMAGE */
+
+.member-image {
+    width: 100%;
+    height: 245px;
+    position: relative;
+    overflow: hidden;
+}
+
+.member-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    display: block;
+
+    transition: 0.5s;
+}
+
+.member-card:hover .member-image img {
+    transform: scale(1.07);
+}
+
+
+/* MEMBER DETAILS */
+
+.member-details {
+    padding: 23px 16px;
+    text-align: center;
+}
+
+.member-details h2 {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.member-details h4 {
+    color: #a4cf39;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.member-details p {
+    color: #d4ded5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+
+/* SMALL LINE */
+
+.line {
+    width: 45px;
+    height: 3px;
+    background: #a4cf39;
+    margin: 0 auto 17px;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #a4cf39;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    background: #a4cf39;
+    color: #06190e;
+    transform: translateY(-4px);
+}
+
+
+/* LEADER CARD */
+
+.leader-card {
+    border: 1px solid #a4cf39;
+    box-shadow:
+    0 0 25px rgba(164, 207, 57, 0.15);
+    position: relative;
+    z-index: 2;
+}
+
+.leader-image {
+    height: 350px;
+}
+
+.leader-details {
+    padding: 22px 25px 28px;
+}
+
+.leader-details h2 {
+    font-size: 31px;
+    margin: 8px 0;
+}
+
+
+.leader-details h4 {
+    font-size: 20px;
+}
+
+.leader-details p {
+    font-size: 15px;
+    max-width: 280px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+/* CLOSING SECTION */
+
+.closing-section {
+    margin-top: 40px;
+    padding: 80px 20px;
+    text-align: center;
+    background:
+    linear-gradient(rgba(3,20,12,.88),
+    rgba(3,20,12,.92)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b")
+    center/cover no-repeat;
+}
+.closing-section > span{
+    font-size: 25px;
+   
+}
+.closing-section span{
+    color: gold;
+}
+
+.closing-section h2 {
+   font-size:60px;
+    line-height: 1.3;
+    margin: 22px 0;
+    color: whitesmoke;
+}
+
+.closing-section p {
+    color: #d0ddd2;
+    line-height: 1.8;
+    font-size: 20px;
+}
+.closing-btn{
+    display: inline-block;
+    width: 50%;
+    margin-top: 28px;
+    padding: 14px 25px;
+    background:gold;
+    color: #071b13;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s;
+    
+}
+
+.closing-btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+
+
+/* =====================================
+   COMPLETE WEBSITE RESPONSIVENESS
+   DESKTOP | TABLET | MOBILE
+===================================== */
+
+
+/* TABLET RESPONSIVE */
+@media screen and (max-width: 1024px) {
+
+    /* PARK HERO */
+    .hero-content-parks {
+        width: 75%;
+        padding: 70px 4%;
+    }
+
+    .hero-content-parks h1 {
+        font-size: 55px;
+    }
+
+    .hero-content-parks h2 {
+        font-size: 48px;
+    }
+
+    .hero-content-parks p {
+        font-size: 21px;
+    }
+
+    /* MAIN PARK LAYOUT */
+    .main-layout {
+        grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+        padding: 0 20px;
+        gap: 12px;
+    }
+
+    .parks-grid,
+    .safari-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-panel {
+        max-width: 100%;
+    }
+
+    .safari-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* INFORMATION */
+    .information {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* GALLERY */
+    .gallery-hero h1 {
+        font-size: 65px;
+    }
+
+    .gallery-hero-content {
+        max-width: 650px;
+    }
+
+    .category-grid,
+    .habitat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid,
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ABOUT */
+    .about-hero-content {
+        width: 75%;
+    }
+
+    .about-hero h1 {
+        font-size: 50px;
+    }
+
+    .about-container {
+        gap: 30px;
+    }
+
+    .mission-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* TEAM */
+    .team-wrapper {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .leader-card {
+        grid-column: span 1;
+    }
+
+    .leader-image {
+        height: 280px;
+    }
+
+    .member-image {
+        height: 220px;
+    }
+
+    .leader-details h2 {
+        font-size: 25px;
+    }
+
+    /* CLOSING */
+    .closing-section h2 {
+        font-size: 48px;
+    }
+
+}
+
+
+/* SMALL TABLETS AND LARGE MOBILES */
+@media screen and (max-width: 768px) {
+
+    /* PARK HERO */
+    .hero-parks {
+        min-height: 85vh;
+    }
+
+    .hero-content-parks {
+        width: 90%;
+        padding: 70px 5%;
+    }
+
+    .hero-content-parks h3 {
+        font-size: 27px;
+    }
+
+    .hero-content-parks h1 {
+        font-size: 43px;
+    }
+
+    .hero-content-parks h2 {
+        font-size: 38px;
+    }
+
+    .hero-content-parks p {
+        font-size: 18px;
+    }
+
+    .park-btn {
+        width: 85%;
+    }
+
+    /* MAIN LAYOUT */
+    .main-layout {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+
+    .parks-grid,
+    .safari-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .booking-panel {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .booking-heading h2 {
+        font-size: 25px;
+    }
+
+    .booking-heading p {
+        font-size: 19px;
+    }
+
+    .booking-panel label {
+        font-size: 17px;
+    }
+
+    /* INFORMATION */
+    .information {
+        grid-template-columns: repeat(2, 1fr);
+        width: 96%;
+    }
+
+    .info-card li {
+        font-size: 15px;
+    }
+
+    .attraction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* GALLERY HERO */
+    .gallery-hero {
+        min-height: 85vh;
+    }
+
+    .gallery-hero-content {
+        padding: 60px 5%;
+    }
+
+    .gallery-hero h1 {
+        font-size: 52px;
+    }
+
+    .gallery-hero-content span,
+    .conservation-content span,
+    .gallery-heading span {
+        font-size: 25px;
+    }
+
+    .gallery-hero p {
+        font-size: 19px;
+    }
+
+    .gallery-btn,
+    .gallery-conservation a {
+        width: 85%;
+    }
+
+    .gallery-heading h2 {
+        font-size: 38px;
+    }
+
+    .gallery-categories,
+    .photo-section,
+    .video-section,
+    .habitat-gallery {
+        padding: 55px 4%;
+    }
+
+    .category-grid,
+    .habitat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-grid,
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-card {
+        height: 250px;
+    }
+
+    /* ABOUT HERO */
+    .about-hero {
+        min-height: 85vh;
+    }
+
+    .about-hero-content {
+        width: 90%;
+        padding: 50px 5%;
+    }
+
+    .tag {
+        font-size: 26px;
+    }
+
+    .about-hero h1 {
+        font-size: 43px;
+    }
+
+    .about-hero p {
+        font-size: 19px;
+    }
+
+    .about-hero-btn {
+        width: 85%;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+        padding: 55px 5%;
+    }
+
+    .Section-Heading h2 {
+        font-size: 38px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image img {
+        height: 320px;
+    }
+
+    .mission-section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 25px 5% 60px;
+    }
+
+    /* TEAM */
+    .team-section {
+        padding: 35px 4%;
+    }
+
+    .team-wrapper {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .leader-card {
+        grid-column: span 2;
+        width: 75%;
+        justify-self: center;
+    }
+
+    .leader-image {
+        height: 330px;
+    }
+
+    .member-image {
+        height: 210px;
+    }
+
+    .team-heading h1 {
+        font-size: 36px;
+    }
+
+    /* CLOSING */
+    .closing-section h2 {
+        font-size: 40px;
+    }
+
+    .closing-btn {
+        width: 80%;
+    }
+
+}
+
+
+/* MOBILE RESPONSIVE */
+@media screen and (max-width: 480px) {
+
+    /* PARK HERO */
+    .hero-parks {
+        min-height: 80vh;
+    }
+
+    .hero-content-parks {
+        width: 100%;
+        padding: 65px 6%;
+    }
+
+    .hero-content-parks h3 {
+        font-size: 21px;
+    }
+
+    .hero-content-parks h1 {
+        font-size: 34px;
+    }
+
+    .hero-content-parks h2 {
+        font-size: 30px;
+    }
+
+    .hero-content-parks p {
+        font-size: 16px;
+    }
+
+    .park-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* MAIN LAYOUT */
+    .main-layout {
+        padding: 0 10px;
+    }
+
+    .parks-section,
+    .safari-section {
+        padding: 10px;
+    }
+
+    .Section-heading h2,
+    .attractions h2 {
+        font-size: 29px;
+    }
+
+    .Section-heading p {
+        font-size: 16px;
+    }
+
+    .parks-grid,
+    .safari-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .park-card img {
+        height: 210px;
+    }
+
+    .park-info {
+        padding: 15px;
+    }
+
+    .booking-panel form {
+        padding: 14px;
+    }
+
+    .booking-heading h2 {
+        font-size: 22px;
+    }
+
+    .booking-heading p {
+        font-size: 16px;
+    }
+
+    .booking-panel form > h3 {
+        font-size: 21px;
+    }
+
+    .safari-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .summary p {
+        font-size: 14px;
+    }
+
+    .secure-note {
+        font-size: 15px;
+    }
+
+    /* SUCCESS PAGE */
+    .success-card {
+        padding: 30px 18px;
+    }
+
+    .success-card h1 {
+        font-size: 26px;
+    }
+
+    .success-card h2 {
+        font-size: 19px;
+    }
+
+    /* INFORMATION */
+    .information {
+        grid-template-columns: 1fr;
+    }
+
+    .attraction-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .attractions {
+        width: 94%;
+    }
+
+    .attraction-grid img {
+        height: 220px;
+    }
+
+    /* GALLERY HERO */
+    .gallery-hero {
+        min-height: 80vh;
+    }
+
+    .gallery-hero-content {
+        padding: 55px 6%;
+    }
+
+    .gallery-hero h1 {
+        font-size: 40px;
+    }
+
+    .gallery-hero-content span,
+    .conservation-content span,
+    .gallery-heading span {
+        font-size: 20px;
+        letter-spacing: 2px;
+    }
+
+    .gallery-hero p {
+        font-size: 16px;
+    }
+
+    .gallery-btn,
+    .gallery-conservation a {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .gallery-heading h2 {
+        font-size: 30px;
+    }
+
+    .gallery-heading p {
+        font-size: 16px;
+    }
+
+    .gallery-categories,
+    .photo-section,
+    .video-section,
+    .habitat-gallery {
+        padding: 40px 5%;
+    }
+
+    .category-grid,
+    .habitat-grid,
+    .photo-grid,
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .category-card {
+        height: 220px;
+    }
+
+    .photo-card {
+        height: 250px;
+    }
+
+    .video-card video {
+        max-height: 230px;
+    }
+
+    .video-info p,
+    .photo-info p {
+        font-size: 15px;
+    }
+
+    .gallery-conservation {
+        padding: 50px 6%;
+    }
+
+    /* ABOUT HERO */
+    .about-hero {
+        min-height: 80vh;
+    }
+
+    .about-hero-content {
+        width: 100%;
+        padding: 55px 6%;
+    }
+
+    .tag {
+        font-size: 21px;
+        letter-spacing: 2px;
+    }
+
+    .about-hero h1 {
+        font-size: 36px;
+    }
+
+    .about-hero p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .about-hero-btn,
+    .read-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* ABOUT SECTION */
+    .about-section {
+        padding: 40px 5%;
+    }
+
+    .Section-Heading {
+        margin-bottom: 30px;
+    }
+
+    .Section-Heading h2 {
+        font-size: 31px;
+    }
+
+    .Section-Heading > span {
+        font-size: 19px;
+    }
+
+    .Section-Heading p {
+        font-size: 16px;
+        word-spacing: 1px;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .about-text h3 {
+        font-size: 25px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    /* MISSION */
+    .mission-section {
+        grid-template-columns: 1fr;
+        padding: 20px 5% 50px;
+        gap: 15px;
+    }
+
+    .mission-card {
+        padding: 28px 20px;
+    }
+
+    /* TEAM */
+    .team-section {
+        padding: 35px 5%;
+    }
+
+    .team-heading span {
+        font-size: 15px;
+    }
+
+    .team-heading h1 {
+        font-size: 29px;
+    }
+
+    .team-heading p {
+        font-size: 14px;
+    }
+
+    .team-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .leader-card {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .leader-image {
+        height: 300px;
+    }
+
+    .member-image {
+        height: 260px;
+    }
+
+    .member-details {
+        padding: 18px 12px;
+    }
+
+    .leader-details h2 {
+        font-size: 25px;
+    }
+
+    .member-details h2 {
+        font-size: 19px;
+    }
+
+    /* CLOSING */
+    .closing-section {
+        padding: 55px 6%;
+    }
+
+    .closing-section > span {
+        font-size: 19px;
+    }
+
+    .closing-section h2 {
+        font-size: 32px;
+    }
+
+    .closing-section p {
+        font-size: 16px;
+    }
+
+    .closing-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* FOOTER */
+    .footer {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+}
+
+
+/* EXTRA SMALL MOBILE */
+@media screen and (max-width: 360px) {
+
+    .hero-content-parks h1 {
+        font-size: 29px;
+    }
+
+    .hero-content-parks h2 {
+        font-size: 26px;
+    }
+
+    .gallery-hero h1 {
+        font-size: 34px;
+    }
+
+    .about-hero h1 {
+        font-size: 31px;
+    }
+
+    .team-heading h1 {
+        font-size: 26px;
+    }
+
+    .leader-image,
+    .member-image {
+        height: 230px;
+    }
+
+    .booking-panel form {
+        padding: 10px;
+    }
+
+}

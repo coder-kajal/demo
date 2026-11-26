@@ -1,0 +1,2613 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+
+} 
+.html, body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: clip;
+
+}
+.body{
+    width: 100%;
+    background-color: white;
+  
+   
+   
+
+}   
+.menu{
+  
+    list-style:none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: Calibri;
+    
+
+}
+
+
+.navbar{
+    background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 15px;
+    position:relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.8),
+    0 8px 20px rgba(0, 0, 0, 0.7);
+    
+  
+    
+
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    transition-duration: .5s;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+    transition: 0.3s;
+    
+
+}
+.menu a:hover{
+    color: #a5d63f;
+    transform: translateY(-3px) ;
+    
+
+}
+.menu a.active{
+    color: gold;
+    border-bottom: 3px solid gold;
+}
+
+.logo{
+    font-size: 35px;
+    color: white;
+    font-family:  Verdana;
+ 
+
+}
+.logo span{
+    color:  #a5d63f;
+    
+}
+.hero {
+    height: 90vh;
+    position: relative;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    isolation: isolate;
+   
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.80) 0%,
+        rgba(0, 0, 0, 0.65) 50%,
+        transparent 100%
+    );
+
+    z-index: 1 ;
+    pointer-events: none;
+}
+
+.hero-content {
+    max-width: 100%;
+    color: white;
+   
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h4 {
+    color:white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: gold;
+}
+
+.hero-content h2 {
+    color: white;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.btn {
+    display: inline-block;
+    background: gold;
+    color: white;
+    text-decoration: none;
+    width: 80%;
+    padding: 13px 22px;
+    border-radius: 6px;
+    color: #04540b;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #f5f5ec;
+    transform: translateY(-3px);
+    color:black;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+
+}
+.search-box input{
+    width: 120px;
+    font-size: 13px;
+    padding: 6px;
+    outline: none;
+    border: none;
+}
+.search-box button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+.explore {
+        padding-top: 0px;
+        width: 100%;
+        padding: 60px 30px;
+        background-color: white;
+        text-align: center;
+}
+
+.explore h1 {
+    color: #1d6806;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.explore p {
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.explore-box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(49, 50, 50, 0.5);
+    transition: 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card h2 {
+    color: #1d6806;
+    margin: 15px;
+}
+
+.card p {
+    padding: 0 10px;
+}
+.learn-btn{
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 0px;  
+    color: #3b7d20;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px; 
+}
+.learn-btn:hover{
+    background: #557d18;
+    color: white;
+}
+.featured-animals{
+   
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+
+}
+.featured-animals p{
+    margin-bottom: 40px;
+   color:  #555;
+}
+.featured-animals h1{
+    color: #1d6806;
+    font-size: 32px;
+    margin-bottom: 15px;
+
+}
+.featured-animals h3{
+
+     color: #1f6609;
+    font-size: 20px;
+    margin-bottom: 15px;
+
+}
+.featured-animals-card{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+.animals-card {
+     background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14);
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(2, 82, 6, 0.5);
+    transition: 0.3s;
+}
+
+.animals-card:hover {
+    transform: translateY(-8px);
+}
+
+.animals-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.animals-card h2 {
+    color: white;
+    margin: 8px;
+    font-size: 18px;
+}
+
+.animals-card p {
+    
+    font-size:17px;
+    word-spacing: 1px;
+    color: white;
+}
+
+
+/*=========
+conservation-section
+============*/
+
+.conservation {
+    width: 100%;
+    min-height: 350px;
+    margin-top: 70px;
+    background:
+    linear-gradient(
+        90deg,
+        rgba(0,0,0,0.65)50%,
+        rgba(0,0,0,0.05)
+    ),
+    url("save logo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.conservation-content {
+    max-width: 500px;
+    color: white;
+    padding-left:20px;
+    text-align: center;
+    
+    
+}
+
+.tag {
+    color:white;
+    letter-spacing: 3px;
+    font-size: 17px;
+}
+
+.conservation h1 {
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 15px 0;
+    color:gold;
+}
+
+.conservation p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e0e0e0;
+}
+
+.conservation-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 25px;
+    text-align: center;
+    background: #426b35;
+    color: white;
+     text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.conservation-btn:hover {
+    background: #80a94c;
+    transform: translateY(-4px);
+}
+
+.facts-heading h1{
+    color: #1d6806;
+    font-size: 32px;
+    margin-top: 30px;
+    padding-bottom:0px;
+    text-align: center;
+
+}
+.facts-heading h4{
+
+    color: #1f6609;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.facts{
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+ 
+
+}
+.facts-item{
+    display: flex;
+    align-items: center
+    
+    
+
+}
+
+/* FORM BOTTOM NOTE */
+
+.form-note {
+    color: #b2c0b4;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* ===== FAQ SECTION ===== */
+
+.faq-section {
+    width: 80%;
+    margin: 40px auto;
+    padding: 80px 3%;
+    border-radius: 18px;
+    background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    color: #ffffff;
+}
+
+/* Heading */
+
+.faq-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 45px;
+}
+
+.faq-subtitle {
+    color: #a7c957;
+    font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+}
+
+.faq-heading h2 {
+    font-size: 36px;
+    margin: 12px 0;
+    color: #e5f3d2;
+}
+
+.faq-heading p {
+    color: #b8c9bd;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+/* FAQ Container */
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Individual FAQ */
+
+.faq-item {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(167,201,87,0.22);
+    border-radius: 10px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: #a7c957;
+    background: rgba(255,255,255,0.09);
+}
+
+/* Question */
+
+.faq-item summary {
+    padding: 20px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #e5f3d2;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 55px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #a7c957;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+/* Answer */
+
+.faq-item p {
+    padding: 0 24px 20px;
+    margin: 0;
+    color: #b8c9bd;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Bottom Contact */
+
+.faq-bottom {
+    text-align: center;
+    margin-top: 45px;
+}
+
+.faq-bottom h3 {
+    font-size: 26px;
+    color: #e5f3d2;
+}
+
+.faq-bottom p {
+    color: #b8c9bd;
+    margin: 10px 0 22px;
+}
+
+.faq-contact-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #a7c957;
+    color: #102719;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.faq-contact-btn:hover {
+    background: #d0e69a;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .faq-section {
+        padding: 55px 5%;
+    }
+
+    .faq-heading h2 {
+        font-size: 27px;
+    }
+
+    .faq-item summary {
+        font-size: 14px;
+        padding: 17px 45px 17px 16px;
+    }
+
+    .faq-item p {
+        padding: 0 16px 17px;
+        font-size: 13px;
+    }
+
+}
+
+/* =================================
+   WILDPLANET HOME CONTACT SECTION
+================================= */
+
+.home-contact {
+    width: 100%;
+    padding: 85px 7%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* MAIN HEADING */
+
+.contact-title {
+    max-width: 100%;
+    margin: 0 auto 55px;
+    text-align: center;
+    background-color;
+    background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact-title > span {
+    color: #a4cf39;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.contact-title h1 {
+    color: white;
+    font-size: 50px;
+    margin: 15px 0;
+}
+
+.contact-title h1 b {
+    color: #a4cf39;
+}
+
+.contact-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 15px 0;
+    color: #a4cf39;
+}
+
+.contact-line span {
+    width: 80px;
+    height: 3px;
+    background: #a4cf39;
+}
+
+.contact-title p {
+    color: #c4d2c7;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+
+/* MAIN CONTAINER */
+
+.contact-wrapper {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:
+    0.9fr 1.1fr;
+    gap: 45px;
+   
+}
+
+
+/* LEFT CONTENT */
+
+.contact-left {
+    padding: 25px 10px;
+    background-color;
+   background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    border-radius: 10px;
+    padding: 38px;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.3);
+
+}
+
+.contact-small-title {
+    color: #a4cf39;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contact-left h2 {
+    color: white;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.contact-left h2 span {
+    color: #a4cf39;
+}
+
+.contact-description {
+    color: #c1d0c5;
+    font-size: 15px;
+    line-height: 2;
+    margin-bottom: 35px;
+}
+
+
+/* CONTACT DETAILS */
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.detail-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(164,207,57,0.10);
+    border: 1px solid #567d35;
+    border-radius: 10px;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.contact-detail:hover .detail-icon {
+    background: #a4cf39;
+    transform: translateY(-4px);
+}
+
+.contact-detail h3 {
+    color: #a4cf39;
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.contact-detail p {
+    color: #d1ddd4;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+
+/* QUOTE */
+
+.contact-quote {
+    margin-top: 38px;
+    padding: 22px;
+    background: rgba(164,207,57,0.07);
+    border-left: 3px solid #a4cf39;
+    border-radius: 5px;
+}
+
+.contact-quote > span {
+    color: #a4cf39;
+    font-size: 45px;
+    line-height: 0.8;
+}
+
+.contact-quote p {
+    color: #e0e9e1;
+    font-size: 17px;
+    line-height: 1.8;
+    font-style: italic;
+}
+
+.contact-quote small {
+    display: block;
+    color: #a4cf39;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+}
+
+
+/* RIGHT FORM */
+
+.contact-right {
+    background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    border: 1px solid rgba(164,207,57,0.32);
+    border-radius: 14px;
+    padding: 38px;
+    box-shadow:
+    0 15px 40px rgba(0,0,0,0.3);
+
+}
+
+
+/* FORM HEADING */
+
+.form-heading > span {
+    color: #a4cf39;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.form-heading h2 {
+    color: white;
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.form-heading p {
+    color: #b9cbbd;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+
+/* TWO INPUTS */
+
+.contact-input-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+
+/* INPUT FIELDS */
+
+.contact-field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    margin-bottom: 21px;
+}
+
+.contact-field label {
+    color: #e0e9e1;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact-field input,
+.contact-field select,
+.contact-field textarea {
+    width: 100%;
+    min-width: 0;
+    background: #071e12;
+    border: 1px solid #3d6045;
+    border-radius: 6px;
+    padding: 14px;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.contact-field input,
+.contact-field select {
+    height: 49px;
+}
+
+.contact-field textarea {
+    resize: vertical;
+    min-height: 100px;
+    line-height: 1.7;
+}
+
+.contact-field input::placeholder,
+.contact-field textarea::placeholder {
+    color: #829688;
+}
+
+.contact-field select {
+    color: #c7d5ca;
+}
+
+.contact-field option {
+    background: #071e12;
+    color: white;
+}
+
+
+/* INPUT FOCUS */
+
+.contact-field input:focus,
+.contact-field select:focus,
+.contact-field textarea:focus {
+    border-color: #a4cf39;
+    box-shadow:
+    0 0 10px rgba(164,207,57,0.13);
+}
+
+
+/* SUBMIT BUTTON */
+
+.contact-submit {
+    width: 100%;
+    padding: 16px;
+    background: #a4cf39;
+    border: 1px solid #a4cf39;
+    border-radius: 6px;
+    color: #071b0e;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit span {
+    display: inline-block;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+.contact-submit:hover {
+    background: transparent;
+    color: #a4cf39;
+    transform: translateY(-3px);
+}
+
+.contact-submit:hover span {
+    transform: translateX(6px);
+}
+
+
+.footer{
+    width: 100%;
+    background: linear-gradient(
+        135deg,
+        #071b14,
+        #0d3022,
+        #071b14
+    );
+    color: white;
+    padding: 3% 4% 4px;
+    box-sizing: border-box;
+
+}
+.footer-box h1 span{
+    color:#a5d63f;
+
+}
+.footer-box h1 p{
+    color:white;
+    padding-left: 21%;
+}
+.footer-logo-para{
+    color:white;
+    font-size: medium;
+    text-align: center;   
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1.2fr 1.3fr;
+    gap: 25px;
+    
+}
+.footer-box {
+    padding: 10px 20px;
+    border-right: 1px solid #345039;
+    min-width: 0;
+    
+}
+
+.footer-box:last-child {
+    border-right: none;
+}
+
+.footer-box h2 {
+    color: #a5d63f;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.footer-box h5 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer-box h3 {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.footer-box p {
+    color: #dce5dc;
+    display: flex;
+    text-transform: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+.footer-box p a{
+    padding-left: 10px;
+
+}
+.footer-box a {
+    display: block;
+    color: #dce5dc;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.footer-box a:hover {
+    color: #a5d63f;
+    padding-left: 5px;
+}
+
+/* SOCIAL ICONS */
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+    justify-content: center;
+    
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    background: #263d30;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* COPYRIGHT */
+
+.footer-bottom {
+    border-top: 1px solid #345039;
+    margin-top: 30px;
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.footer-bottom span{
+    color: #a5d63f;
+
+}
+.footer-bottom p {
+    font-size: 13px;
+    color: #dce5dc;
+    margin: 0;
+    text-align: center;
+    gap: 25px;
+}
+.footer-bottom a{
+    text-decoration: none;
+    color: white;
+    
+
+
+}
+/*=========================
+    animals menu bar
+=================== */
+
+/* HERO */
+.animal-hero{
+   
+    padding: 60px;
+    align-items: center;
+    height: 100vh;
+    width:100%;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+.animal-hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    
+}
+
+
+.animal-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.90) 40%,
+        rgba(0, 0, 0, 0.65) 60%,
+        transparent 100%
+    );
+
+    z-index: 1 ;
+    pointer-events: none;
+}
+
+.hero-content2{
+    max-width: 650px;
+    position: relative;
+    z-index:2;
+    
+
+}
+.hero-content2 h3{
+     color: white;
+     font-size: 40px;
+     padding-bottom: 10px;
+}
+.hero-content2 h1{
+    color: gold;
+    font-size: 80px;
+    
+}
+
+
+
+.hero-content2 p{
+    font-size: 18px;
+    font-size: 24px;
+    color:white;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    word-spacing: 2px;
+    font-family: sans-serif;
+}
+.hero-content2 a{
+    display: inline-block;
+    text-decoration: none;
+    background:  gold;
+    color: #053714;
+    padding: 13px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: 80%;
+   margin-top: 20px;
+}
+
+.hero-content2 a:hover {
+    background:white;
+    color: #053714;
+    transform: translateY(-3px);
+}   
+/*About animals*/
+
+.about-animals{
+    height: 70%;
+    width: 100%;
+    display: grid;
+    padding: 15px 0px;
+    grid-template-columns: 40% 60%;
+    border-bottom: 1px solid #053714;
+    background: white;
+    position: relative;
+
+}
+.about-image{
+    min-height: 210px;
+  
+
+}
+.about-image img{
+    height: 95%;
+    width: 100%;
+    min-height: 210px;
+    object-fit: cover;
+    display: block;
+   
+}
+
+.about-content{
+    padding: 22px ;
+
+}
+.about-content h2{
+    font-size: 30px;
+    padding-left: 30px;
+    color:  #1d6806;;
+
+}
+.line{
+    font-size: 22px;
+    line-height: 1.7;
+    margin-top: 15px;
+    max-width: 700px;
+    padding-left: 30px;
+    color: #237f06;
+
+}
+.animal-values{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    margin-top:30px ;
+
+}
+.animal-values div{
+    padding: 0,12px;
+    border-right: 2px solid #29452b;
+
+}
+.animal-values div:first-child{
+    padding: 0;
+
+}
+.animal-values div:last-child{
+border: none;
+
+}
+.animal-values span{
+    font-size: 30px;
+    color: #1a7b10;
+    padding-left: 12%
+    
+}
+.animal-values p{
+    font-size: 19px;
+    line-height: 1.5;
+    margin-top: 7px;
+   text-align: center;
+}
+
+/*EXPLORE SECTION*/
+
+.explore-section {
+    padding: 25px 5% 12px;
+   
+}
+
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 0 14%;
+    justify-content: center;
+   
+   
+}
+
+.animal-card{
+    border: 1px solid #1c3c20;
+    border-radius: 9px;
+    overflow: hidden;
+    height:650px;
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    box-shadow: 0 3px 12px #04540b;
+    
+}
+
+
+.animal-card img {
+    width: 100%;
+    height:300px;
+    object-fit:cover;
+    display: block;
+    border-radius: 6px;
+    
+}
+
+.card-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 300px;
+    
+   
+}
+
+.card-content h3 {
+    color: #169412;
+    font-size: 20px;
+    margin-bottom: 7px;
+    
+}
+
+.card-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    flex: 1;
+}
+
+
+.learn-btn {
+    padding: 7px 12px;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #1a7b10;
+}
+
+
+/*FACTS SECTION*/
+
+.facts-section{
+     padding: 25px 5%;
+     background: linear-gradient(to top, rgba(0,20,8,0.7),rgba(1, 53, 22, 0.55)),url(animalimages/did-you-know-bg.jpeg);
+     background-size: cover;
+     background-position: center;
+     border-top: 1px solid #29452b;
+     border-bottom: 1px solid #29452b;
+     margin-top:30px ;
+}
+
+.facts-grid{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+
+}
+.fact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 13px;
+    padding: 10px;
+    border-right: 1px solid #52624a;
+
+}
+.fact:last-child{
+    border: none;
+
+}
+.sections-heading h1{
+  font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 15px;
+   color: white;
+
+}
+.fact span{
+    font-size: 40px;
+
+    
+}
+.fact h3{
+    color: #a5d63f;
+    font-size: 26px;
+}
+.fact p{
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*GALLERY SECTION*/
+
+
+
+.gallery-section {
+    
+    text-align: center;
+
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0,1fr));
+    gap: 12px;
+    padding: 0 8px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 30vh;
+    object-fit: fill;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 3px 8px #0a4016;
+  
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04);
+}
+
+.gallery-btn{
+    justify-content: center;
+    margin: 25px 10px;
+    align-items: center;
+    width: 100%;
+
+}
+.gallery-btn a{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: 0 2px 5px #4b2f05;
+    font-size: 20px; 
+    transition: 0.3s;
+}
+.gallery-btn a:hover{
+    background-color: #227516;
+    color: white;
+
+}
+
+
+
+
+
+/*Protect-Sectiom*/
+
+.protect-section {
+    height: 380px;
+    background:
+        linear-gradient(90deg, rgba(0,15,7,.85), rgba(0,15,7,.05)),
+        url("animalimages/protect-animals.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 25px 7%;
+    border-top: 1px solid #29452b;
+    margin: 40px 0;
+}
+
+.protect-content h1{
+    font-size: 50px;
+    color: #a4cf39;
+}
+
+.protect-content p {
+    color: white;
+    
+    margin: 7px 0 15px;
+    font-size: 20px;
+    width: 50%;
+    word-spacing: 5px;
+    line-height:1.4;
+    font-family:sans-serif;
+    text-align: center;
+    padding-left: 30px  ;
+    
+    
+}
+.main-btn {
+    display: inline-block;
+   border: 1px solid #05771e;
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+     margin-left: 15% ;
+    margin-top: 20px;
+}
+
+.main-btn:hover {
+    background: #557d18;
+    transform: translateY(-3px);
+}
+ 
+
+
+
+/*==================
+HABITATES MENU BAR
+=============*/
+
+.hero-habitates{
+ 
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+   
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    
+}
+
+
+.hero-habitates::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.90) 0%,
+        rgba(0, 0, 0, 0.65) 40%,
+        transparent 100%
+    );
+
+    z-index: 1 ;
+    pointer-events: none;
+}
+
+
+    
+      
+.hero-habitates-content {
+    max-width: 70%;
+    color: white;
+    position: relative;
+    padding: 20px 5%;
+    z-index: 2;
+  
+}
+
+.hero-habitates-content h4 {
+    color:rgb(208, 199, 199);
+    font-size: 40px;
+    margin-bottom: 10px;
+    
+}
+
+.hero-habitates-content h1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: gold;
+   
+}
+
+.hero-habitates-content h2 {
+    color:gold;
+    font-size: 30px;
+    margin-bottom: 15px;
+   
+}
+
+.hero-habitates-content p {
+    font-size: 23px;
+    line-height: 1.6;
+   
+    
+    
+}
+.habitate-btn{
+    display: inline-block;
+    width:60%;
+    margin-top: 28px;
+    padding: 14px 25px;
+    background: gold;
+    color: #071b13;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+
+.habitate-btn:hover {
+    background: white;
+    transform: translateY(-4px);
+}
+
+
+/*habitates-cards*/
+
+.animal-card{
+    height: 100%;
+}
+.animals-grid{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+}
+.animal-card img{
+    height: 200PX;
+    object-fit: cover;
+}
+
+.card-content h3{
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+.explore-section2{
+  padding: 25px 5% 12px;
+   
+
+}
+.card-content{
+    background: white;
+}
+.card-content p{
+    color: black;
+
+}
+
+/*wildlife-table*/
+
+.section-heading{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 25px;
+    
+}
+.section-heading h2{
+    color: #0a7012;
+
+}
+.section-heading p{
+    font-size: 18px;
+    margin-top: 6px;
+    color: rgb(136, 133, 133);
+}
+
+.wildlife-table {
+    padding: 0 6% 30px;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    border-radius: 8px;
+    border: 1px solid #dce2d5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 20px;
+}
+
+thead {
+    background: #194b24;
+    color: white;
+}
+
+th,td {
+    text-align: left;
+    padding: 10px 13px;
+    border-bottom: 1px solid #e0e5dc;
+}
+
+tbody tr:hover {
+    background: #edf5e7;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* INDIA HABITATS*/
+
+.india-section {
+    padding: 0 3% 22px;
+}
+
+.india-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+}
+
+.india-card {
+    background: white;
+    border: 1px solid #e0e5d9;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 3px 9px rgba(0,25,45,0.6);
+    transition: 0.3s;
+}
+
+.india-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.13);
+}
+
+.india-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.india-card h3 {
+    color: #05771e;
+    font-size: 25px;
+    margin: 12px 5px 7px;
+}
+
+.india-card p {
+    padding: 0 12px 14px;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #626964;
+}
+
+/*two -panels*/
+
+
+.two-panels {
+    
+    gap: 12px;
+    padding: 0 3% 20px;
+    background: #f5f5ec;
+    
+}
+
+.why-panel{
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(0,25,13,0.96), rgba(0,25,13,0.78)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=900")
+    center/cover;
+    box-shadow: 0 5px 10px #05771e;
+}
+.threat-panel{
+    padding: 20px;
+    margin: 5px 45px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    color: white;
+    background:
+    linear-gradient(90deg, rgba(0,25,13,0.96), rgba(0,25,13,0.78)),
+    url("https://images.unsplash.com/photo-1448375240586-882707db888b?w=900")
+    center/cover;
+    box-shadow: 0 5px 10px #e63905;
+}
+.threat-panel {
+    background:
+    linear-gradient(90deg, rgba(5,20,11,0.95), rgba(5,20,11,0.65)),
+    url("https://images.unsplash.com/photo-1511497584788-876760111969?w=900")
+    center/cover;
+}
+
+.why-panel h2,
+.threat-panel h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    
+}
+
+.threat-panel h2 {
+    color: #ff765a;
+}
+
+.why-panel p,
+.threat-panel p {
+    font-size: 20px;
+    line-height: 1.7;
+    margin: 9px 0;
+}
+
+/* =========================
+   FACTS, ACTION AND QUIZ
+========================= */
+
+.bottom-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding: 0 3% 22px;
+    background: #f5f5ec;
+}
+
+.nature-facts,
+.take-action {
+    background: #08321d;
+    padding: 22px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 5px 10px #183607;
+}
+
+.nature-facts h2,
+.take-action h2 {
+    font-size: 25px;
+    color: whitesmoke;
+    margin-bottom: 14px;
+}
+
+.nature-facts p,
+.take-action p {
+    font-size: 20px;
+    line-height: 1.65;
+    padding: 7px 0;
+    color: #e0e9e1;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.quiz-panel {
+    background: #f8f8ef;
+    border: 1px solid #dce2d5;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+
+.quiz-panel h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #0c551d;
+}
+
+.quiz-panel > p {
+    text-align: center;
+    color: #68736a;
+    font-size: 20px;
+    margin: 7px 0 13px;
+}
+
+.question {
+    padding: 12px 9px;
+    border: 1px solid #e0e5d9;
+    border-radius: 6px;
+    margin-bottom: 9px;
+}
+
+.question b {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #1a682c;
+}
+
+.question label {
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 8px 4px 0;
+    cursor: pointer;
+}
+
+.question input {
+    accent-color: #4c8e32;
+}
+
+.quiz-panel button {
+    padding: 8px 18px;
+    border: none;
+    background: #326f28;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+    
+.quiz-panel b:hover{
+    color: #ed0a0a;
+
+}
+
+
+
+
+
+/* =========================================
+   RESPONSIVE CSS
+   MOBILE + TABLET + LAPTOP
+========================================= */
+
+
+/* ---------- LARGE TABLETS & SMALL LAPTOPS ---------- */
+
+@media (max-width: 1200px) {
+
+    .menu {
+        gap: 25px;
+    }
+
+    .hero-content h1 {
+        font-size: 65px;
+    }
+
+    .hero-content2 h1 {
+        font-size: 65px;
+    }
+
+    .hero-habitates-content h1 {
+        font-size: 75px;
+    }
+
+    .animal-grid {
+        padding: 0 5%;
+    }
+
+    .animal-card {
+        height: auto;
+    }
+
+    .animals-grid {
+        flex-wrap: wrap;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .india-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ---------- TABLET ---------- */
+
+@media (max-width: 992px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 18px;
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        margin-left: auto;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+    .hero-content h4 {
+        font-size: 38px;
+    }
+
+    .hero-content h2 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 19px;
+    }
+
+    .explore-box,
+    .featured-animals-card {
+        flex-wrap: wrap;
+    }
+
+    .about-animals {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .animal-values {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .animal-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding: 0 3%;
+    }
+
+    .animals-grid {
+        flex-wrap: wrap;
+    }
+
+    .animal-card {
+        height: auto;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-habitates-content h1 {
+        font-size: 65px;
+    }
+
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .search-box {
+        margin: 5px auto;
+    }
+
+
+    /* HOME HERO */
+
+    .hero {
+        height: auto;
+        min-height: 75vh;
+        padding: 40px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h4 {
+        font-size: 28px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 23px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+
+    /* EXPLORE */
+
+    .explore {
+        padding: 40px 15px;
+    }
+
+    .explore-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* FEATURED ANIMALS */
+
+    .featured-animals-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .animals-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    /* CONSERVATION */
+
+    .conservation {
+        padding: 30px 15px;
+        min-height: 350px;
+    }
+
+    .conservation-content {
+        padding: 10px;
+    }
+
+    .conservation h1 {
+        font-size: 32px;
+    }
+
+    .conservation p {
+        font-size: 15px;
+    }
+
+
+    /* ANIMAL HERO */
+
+    .animal-hero {
+        height: auto;
+        min-height: 75vh;
+        padding: 40px 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hero-content2 {
+        max-width: 100%;
+    }
+
+    .hero-content2 h3 {
+        font-size: 27px;
+    }
+
+    .hero-content2 h1 {
+        font-size: 43px;
+    }
+
+    .hero-content2 p {
+        font-size: 16px;
+    }
+
+    .hero-content2 a {
+        width: 100%;
+    }
+
+
+    /* ABOUT ANIMALS */
+
+    .about-animals {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .about-image img {
+        height: 250px;
+    }
+
+    .about-content {
+        padding: 20px 15px;
+    }
+
+    .about-content h2,
+    .line {
+        padding-left: 0;
+    }
+
+    .line {
+        font-size: 16px;
+    }
+
+    .animal-values {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .animal-values span {
+        font-size: 23px;
+        padding-left: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .animal-values p {
+        font-size: 15px;
+    }
+
+
+    /* ANIMAL CARDS */
+
+    .animal-grid {
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+
+    .animals-grid {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .animal-card {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .animal-card img {
+        height: 220px;
+    }
+
+    .card-content {
+        height: auto;
+    }
+
+
+    /* FACTS */
+
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fact {
+        border-right: none;
+        border-bottom: 1px solid #52624a;
+        justify-content: flex-start;
+    }
+
+    .fact:last-child {
+        border-bottom: none;
+    }
+
+    .sections-heading h1 {
+        font-size: 29px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .gallery-grid img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+
+    /* PROTECT SECTION */
+
+    .protect-section {
+        height: auto;
+        min-height: 350px;
+        padding: 30px 20px;
+    }
+
+    .protect-content h1 {
+        font-size: 32px;
+    }
+
+    .protect-content p {
+        width: 100%;
+        padding-left: 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .main-btn {
+        margin-left: 0;
+    }
+
+
+    /* HABITAT HERO */
+
+    .hero-habitates {
+        height: auto;
+        min-height: 75vh;
+        padding: 30px 10px;
+    }
+
+    .hero-habitates-content {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .hero-habitates-content h4 {
+        font-size: 27px;
+    }
+
+    .hero-habitates-content h1 {
+        font-size: 45px;
+    }
+
+    .hero-habitates-content h2 {
+        font-size: 23px;
+    }
+
+    .hero-habitates-content p {
+        font-size: 16px;
+    }
+
+    .habitate-btn {
+        width: 100%;
+    }
+
+
+    /* HABITAT TABLE */
+
+    .wildlife-table {
+        padding: 0 12px 25px;
+    }
+
+    table {
+        font-size: 14px;
+        min-width: 550px;
+    }
+
+    th, td {
+        padding: 9px;
+    }
+
+
+    /* INDIA HABITATS */
+
+    .india-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .india-card img {
+        height: 210px;
+    }
+
+
+    /* PANELS */
+
+    .two-panels {
+        padding: 0 12px 20px;
+    }
+
+    .threat-panel {
+        margin: 15px 0;
+    }
+
+    .why-panel p,
+    .threat-panel p {
+        font-size: 16px;
+    }
+
+
+    /* BOTTOM GRID */
+
+    .bottom-grid {
+        grid-template-columns: 1fr;
+        padding: 0 12px 20px;
+    }
+
+    .nature-facts p,
+    .take-action p {
+        font-size: 16px;
+    }
+
+    .quiz-panel h2 {
+        font-size: 24px;
+    }
+
+
+    /* CONTACT SECTION */
+
+    .home-contact {
+        padding: 45px 15px;
+    }
+
+    .contact-title {
+        margin-bottom: 25px;
+    }
+
+    .contact-title h1 {
+        font-size: 30px;
+    }
+
+    .contact-title p {
+        font-size: 15px;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        padding: 22px 15px;
+    }
+
+    .contact-left h2 {
+        font-size: 26px;
+    }
+
+    .form-heading h2 {
+        font-size: 24px;
+    }
+
+    .contact-input-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-box {
+        border-right: none;
+        border-bottom: 1px solid #345039;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .footer-box:last-child {
+        border-bottom: none;
+    }
+
+    .footer-box p {
+        justify-content: center;
+    }
+
+    .footer-box h1 p {
+        padding-left: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+
+/* ---------- SMALL MOBILE ---------- */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .menu {
+        gap: 5px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content h4 {
+        font-size: 24px;
+    }
+
+    .hero-content2 h1 {
+        font-size: 35px;
+    }
+
+    .hero-habitates-content h1 {
+        font-size: 36px;
+    }
+
+    .explore h1,
+    .featured-animals h1 {
+        font-size: 26px;
+    }
+
+    .conservation h1 {
+        font-size: 28px;
+    }
+
+    .animal-values {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-grid img {
+        height: 140px;
+    }
+
+    .contact-title h1 {
+        font-size: 25px;
+    }
+
+    .contact-line span {
+        width: 40px;
+    }
+
+    .fact span {
+        font-size: 30px;
+    }
+
+    .fact h3 {
+        font-size: 21px;
+    }
+
+    .footer-box h2 {
+        font-size: 23px;
+    }
+
+}
+
+
+/* ---------- EXTRA SMALL MOBILE ---------- */
+
+@media (max-width: 350px) {
+
+    .menu {
+        gap: 3px;
+    }
+
+    .menu a {
+        font-size: 11px;
+        padding: 3px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content2 h1 {
+        font-size: 30px;
+    }
+
+    .hero-habitates-content h1 {
+        font-size: 30px;
+    }
+
+    .contact-left,
+    .contact-right {
+        padding: 15px 10px;
+    }
+
+}
+
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Page</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+   
+</head>
+<body>
+
+    <header>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">🌿WILD <span>PLANET</span></div>
+                
+                <ul class="menu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="animals.html">ANIMALS</a></li>
+                    <li><a href="habitates.html">HABITATES</a></li>
+                    <li><a href="parks.html"  class="active">NATIONAL PARKS</a></li>
+                    <li><a href="glry.html">GALLERY</a></li>
+                    <li><a href="abtus.html">ABOUT US</a></li>
+                    <li class="search-box">
+                        <input type="text" placeholder="Search...">
+                        <button type="submit">🔍</button>
+
+                    </li>
+                </ul>
+             </div>
+        </div>
+    </header>
+    <aside class="booking-panel" id="booking">
+
+        <div class="booking-heading">
+            <h2>BOOK YOUR SAFARI ADVENTURE</h2>
+            <p>Fill in the details to plan your visit</p>
+        </div>
+
+        <form action="booking-success.html" method="get">
+
+            <label>Select National Park *</label>
+            <select required>
+                <option value="">-- Choose National Park --</option>
+                <option>Jim Corbett National Park</option>
+                <option>Kaziranga National Park</option>
+                <option>Ranthambore National Park</option>
+                <option>Gir National Park</option>
+                <option>Kanha National Park</option>
+                <option>Sundarbans National Park</option>
+                <option>Bandipur National Park</option>
+                <option>Hemis National Park</option>
+                <option>Periyar National Park</option>
+                <option>Pench National Park</option>
+                <option>Tadoba Tiger Reserve</option>
+                <option>Nameri National Park</option>
+            </select>
+
+            <label>Select Safari Type *</label>
+            <select required>
+                <option value="">-- Select Safari Type --</option>
+                <option>Jeep Safari</option>
+                <option>Canter Safari</option>
+                <option>Nature Walk</option>
+                <option>Wildlife Photography Safari</option>
+            </select>
+
+            <div class="safari-options">
+                <div>🚙<br>Jeep Safari</div>
+                <div>🚌<br>Canter Safari</div>
+                <div>🚶<br>Nature Walk</div>
+                <div>🔭<br>Wildlife Photography Safari</div>
+            </div>
+
+            <label>Visit Date *</label>
+            <input type="date" required>
+
+            <label>Time Slot *</label>
+            <select required>
+                <option value="">-- Select Time Slot --</option>
+                <option>Morning (6 AM - 11 AM)</option>
+                <option>Afternoon (2 PM - 6 PM)</option>
+            </select>
+
+            <label>Number of Visitors *</label>
+            <select required>
+                <option value="">-- Select Number --</option>
+                <option>1 Visitor</option>
+                <option>2 Visitors</option>
+                <option>3 Visitors</option>
+                <option>4 Visitors</option>
+                <option>5 Visitors</option>
+                <option>6 Visitors</option>
+            </select>
+
+            <label>Entry Gate (If Any)</label>
+            <select>
+                <option value="">-- Select Entry Gate --</option>
+                <option>Bijrani Gate</option>
+                <option>Dhikala Gate</option>
+                <option>Jhirna Gate</option>
+                <option>Other Gate</option>
+            </select>
+
+            <div class="form-divider"></div>
+
+            <h3>YOUR DETAILS</h3>
+
+            <label>Full Name *</label>
+            <input type="text" placeholder="Enter your full name" required>
+
+            <label>Email Address *</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="Enter your phone number" required>
+
+            <div class="summary">
+                <h3>BOOKING SUMMARY</h3>
+                <p>Safari Type: <span>-</span></p>
+                <p>Visitors: <span>-</span></p>
+                <p>Park Entry Fee: <span>-</span></p>
+                <p>Safari Charge: <span>-</span></p>
+                <hr>
+                <h3>Total Amount <b>₹ 0</b></h3>
+            </div>
+
+            <button type="submit" class="confirm-btn">
+                <a href="booking-success.html"> Confirm Booking
+                </a>
+            </button>
+
+            <div class="secure-note">
+                🔒 Your data is safe with us.<br>
+                This is a demo booking form.
+            </div>
+
+        </form>
+    </aside>
+    <footer class="footer">
+    <div class="footer-container">
+        <!--Column 1 LOGO-->
+        <div class="footer-box">
+            <h1>🌿WILD <span>PLANET</span>
+            <p>THE WILDLIFE EXPLORER</p>
+            </h1>
+            
+            <h4 class="footer-logo-para">Explore the wonder of wildlife and join us in our mission to protect Nature for a better tomorrow.</h4>
+       
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        </div>
+    
+         <!--Column 2 QUICK-LINKS--> 
+     
+        <div class="footer-box">
+            <h3>QUICK LINKS</h3>
+            <a href="index.html">Home</a>
+            <a href="animals.html">Animals</a>
+            <a href="habitats.html">Habitates</a>
+            <a href="parks.html">National Parks</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+        </div>
+
+         <!-- COLUMN 3: USEFUL LINKS -->
+        <div class="footer-box">
+            <h3>USEFUL LINKS</h3>
+
+            <a href="#conservation">Wildlife Conservation</a>
+            <a href="#endangered">Endangered Species</a>
+            <a href="gallery.html">Photo Gallery</a>
+            <a href="#facts">Fun Facts</a>
+            <a href="about.html">Contact Us</a>
+        </div>
+
+        <!-- COLUMN 4: CONTACT -->
+        <div class="footer-box">
+
+        <h3>CONTACT US</h3>
+
+        <p>
+            <i class="fa-solid fa-location-dot"></i>
+            <a href="https://maps.app.goo.gl/7Wy7Zr7d17BV2jDz6"
+            target="_blank">
+            Prayagraj, Uttar Pradesh, India
+            </a>
+        </p>
+
+        <p>
+        <i class="fa-solid fa-phone"></i>
+        <a href="tel:+919984776974">+91 9984776974</a>
+        </p>
+
+        <p>
+        <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:info@wildplanet.com">
+            info@wildplanet.com
+        </a>
+        </p>
+
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p><i class="fa-regular fa-copyright"></i> 2026 <span>WILDPLANET.</span> All Rights Reserved.</p>
+       
+        <div>
+        <a href="#">• Terms of Service</a>  
+        <a  href="#">• Privacy Policy</a>  
+        <a  href="#">• Cookie Prefernces</a>
+        </div>
+    </div>
+
+
+</footer>
+    
+</body>
+</html>
